@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Website Saya</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <!-- FontAwesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Bootstrap JS (Popper.js and jQuery included) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <style>
+    .material-content {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .material-item {
+      display: flex;
+      margin-bottom: 20px;
+      align-items: center;
+    }
+
+    .material-image {
+      max-width: 300px;
+      height: auto;
+      margin-left: 20px;
+      margin-right: 20px;
+      cursor: pointer;
+    }
+
+    .material-text {
+      flex-grow: 1;
+    }
+    .life-tracks h2 {
+      font-style: italic;
+    }
+    .life-tracks-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .life-track-item {
+      text-align: center;
+      margin: 20px;
+      flex: 0 0 calc(33.33% - 40px); /* 3 kolom, berikan margin pada setiap sisi */
+    }
+
+    .life-track-image {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px; /* Tambahkan radius sudut untuk efek estetika */
+    }
+
+    .card-title {
+      font-style: italic;
+      font-size: 1.2em; /* Sesuaikan ukuran font sesuai keinginan */
+      margin: 10px 0;
+      color: rgb(54, 54, 54); /* Warna font untuk judul */
+    }
+
+    p {
+      font-size: 1em; /* Sesuaikan ukuran font sesuai keinginan */
+      color: black; /* Warna font untuk teks */
+    }
+
+    .gallery-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    .gallery-item {
+      text-align: center;
+      margin: 10px;
+    }
+
+    .gallery-image {
+      max-width: 350px;
+      height: auto;
+      cursor: pointer;
+    }
+
+ 
+
+    /* Tambahkan gaya untuk elemen latar belakang */
+    #home {
+      position: relative;
+      color: #fff; /* Warna teks */
+      padding: 100px 0; /* Sesuaikan padding sesuai kebutuhan */
+      text-align: center;
+      background: url('img/bg1.jpg') center center; /* Hapus /cover/no-repeat/fixed */
+      background-size: cover; /* Tambahkan ini untuk memastikan gambar selalu menutupi seluruh area */
+      background-repeat: no-repeat; /* Hapus /no-repeat */
+      overflow: hidden;
+    }
+
+    /* Efek bayangan teks */
+    #home h2, #home p {
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    /* Nama di Navbar */
+    .navbar-brand {
+      font-family: 'Arial', sans-serif; /* Ganti dengan font yang diinginkan */
+      font-weight: bold;
+    }
+
+    .navbar-brand span {
+      color: #575757; /* Warna abu-abu untuk "Iqbal" */
+      font-style: italic;
+    }
+
+    .navbar-brand em {
+      color: #989898; /* Warna putih untuk "Maulana" */
+      font-style: italic; /* Miringkan teks "Maulana" */
+    }
+    
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <div class="container">
+    <!-- Brand dan toggle button -->
+    <a class="navbar-brand" href="#"><span>Iqbal</span> <em>Maulana</em></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menu navbar -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#life-tracks">Life Tracks</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#gallery">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="tugas.html">Tugas STI</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Content -->
+<div class="container mt-4">
+  <!-- Home Section -->
+  <section id="home">
+    <div class="text-center">
+      <h2 class="mt-3">I am an Informatics Engineering student</h2>
+      <p>"Let's Explore"</p>
+    </div>
+  </section>
+
+ <!-- Materi Section -->
+<section id="materi" class="mt-5">
+  <h2 class="text-center mb-4"></h2>
+
+  <!-- Satu Materi -->
+  <div class="material-content">
+    <h3><span class="red-text">Mindset </span><span class="black-text">Progesif</span></h3>
+
+      <!-- Gambar Pertama -->
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card">
+            <img src="img/1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Pola Pikir</h5>
+              <p class="card-text">Saya adalah seorang mahaiswa,saya percaya bahwa belajar adalah investasi terbaik yang dapat kita buat dalam diri sendiri...</p>
+              <p class="card-text">Saya yakin bahwa belajar adalah sebuah petualangan tanpa akhir,dan web ini adalah jendela ke dunia pengetahuan,dimana saya akan membahas sedikit tentang pola pikir dalam Pendidikan</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="img/2.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Progesif</h5>
+              <p class="card-text">Suatu pola pikir atau sikap mental yang menekankan pada pandangan bahwa kemajuan dan perubahan adalah hal yang mungkin, dan bahwa individu dapat terus berkembang, belajar, dan meningkatkan kualitas hidup mereka.</p>
+              <p class="card-text">Seseorang dengan mindset progresif cenderung melihat tantangan sebagai peluang untuk belajar dan tumbuh, serta memiliki keyakinan bahwa usaha dan dedikasi dapat membawa perubahan positif.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="img/3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Mengembangkan Pola Pikir</h5>
+              <p class="card-text">Membatasi kemajuan, langkah penting untuk mengatasi hambatan dan mengembangkan pola pikir yang lebih positif.</p>
+              <p class="card-text">Mengenali dan menantang keyakinan atau pemikiran negatif ini dapat membuka jalan bagi perubahan positif dalam pola pikir dan perilaku Anda. Seringkali, konseling atau dukungan psikologis juga dapat membantu mengatasi hambatan-hambatan ini.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="img/4.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Situasi Perubahan</h5>
+              <p class="card-text">Seseorang dengan pola pikir positif akan melihat perubahan sebagai peluang untuk pertumbuhan dan peningkatan. Mereka mungkin merasa bersemangat untuk menghadapi perubahan dan menyesuaikan diri.</p>
+              <p class="card-text">Sebaliknya, seseorang dengan pola pikir negatif mungkin merasa takut atau resisten terhadap perubahan.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Life Tracks Section -->
+  <section id="life-tracks" class="mt-5">
+    <h2 class="text-center mb-4">Life Tracks</h2>
+    
+
+    <!-- Foto-foto dan Tulisannya -->
+    <div class="life-tracks-content">
+      <!-- Life Track 1 -->
+      <div class="life-track-item">
+        <img src="img/A.jpg" alt="Life Track 1" class="life-track-image">
+        <h5 class="card-title">Nature</h5>
+        <p>Petualangan bagi saya bukan hanya sekadar perjalanan fisik, tetapi juga eksplorasi diri dan penemuan akan keajaiban di sekitar.</p>
+      </div>
+
+      <!-- Life Track 2 -->
+      <div class="life-track-item">
+        <img src="img/B.jpg" alt="Life Track 2" class="life-track-image">
+        <h5 class="card-title">Adventure</h5>
+        <p>Dalam setiap detik petualangan, saya menemukan kekuatan dalam ketidakpastian, menciptakan kisah-kisah yang melibatkan keberanian dan semangat tak terbatas.</p>
+      </div>
+
+      <!-- Life Track 3 -->
+      <div class="life-track-item">
+        <img src="img/C.jpg" alt="Life Track 3" class="life-track-image">
+        <h5 class="card-title">Eksplorasi</h5>
+        <p>Setiap langkah yang saya ambil dalam petualangan membuka lembaran baru dalam kisah hidup, memperkaya pengalaman dan membangun kenangan abadi.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="mt-5">
+    <h2 class="text-center mb-4">Gallery</h2>
+
+    <!-- Foto-foto untuk Galeri -->
+    <div class="gallery-content">
+      <!-- Foto 1 -->
+      <div class="gallery-item">
+        <img src="gallery/1.jpg" alt="Foto 1" class="gallery-image" data-bs-toggle="modal" data-bs-target="#modal1">
+      </div>
+
+      <!-- Foto 2 -->
+      <div class="gallery-item">
+        <img src="gallery/2.jpg" alt="Foto 2" class="gallery-image" data-bs-toggle="modal" data-bs-target="#modal2">
+      </div>
+
+      <!-- Foto 3 -->
+      <div class="gallery-item">
+        <img src="gallery/3.jpg" alt="Foto 3" class="gallery-image" data-bs-toggle="modal" data-bs-target="#modal3">
+      </div>
+
+      <!-- Foto 4 -->
+      <div class="gallery-item">
+        <img src="gallery/4.jpg" alt="Foto 4" class="gallery-image" data-bs-toggle="modal" data-bs-target="#modal4">
+      </div>
+
+      <!-- Foto 5 -->
+      <div class="gallery-item">
+        <img src="gallery/5.jpg" alt="Foto 5" class="gallery-image" data-bs-toggle="modal" data-bs-target="#modal5">
+      </div>
+
+      <!-- Foto 6 -->
+      <div class="gallery-item">
+        <img src="gallery/6.jpg" alt="Foto 6" class="gallery-image" data-bs-toggle="modal" data-bs-target="#modal6">
+      </div>
+
+      <!-- Foto 7 -->
+      <div class="gallery-item">
+        <img src="gallery/7.jpg" alt="Foto 7" class="gallery-image" data-bs-toggle="modal" data-bs-target="#modal7">
+      </div>
+
+      <!-- Foto 8 -->
+      <div class="gallery-item">
+        <img src="gallery/8.jpg" alt="Foto 8" class="gallery-image" data-bs-toggle="modal" data-bs-target="#modal8">
+      </div>
+
+      <!-- Foto 9 -->
+      <div class="gallery-item">
+        <img src="gallery/9.jpg" alt="Foto 9" class="gallery-image" data-bs-toggle="modal" data-bs-target="#modal9">
+      </div>
+    </div>
+  </section>
+
+<!-- About Section -->
+<section id="about" class="mt-5">
+  <h2 class="text-center mb-4">About Me</h2>
+
+  <div class="about-content text-center">
+    <hr class="section-divider"> <!-- Garis di atas tulisan -->
+
+    <p>Nama: Muhammad Iqbal Maulana</p>
+    <p>Alamat: Jepara</p>
+    <p>Email: miqbalm48@gmail.com</p>
+
+    <hr class="section-divider"> <!-- Garis di atas tulisan -->
+
+
+    <!-- What I'm Doing Section -->
+    <h4>What I'm Doing</h4>
+
+    <div class="row">
+      <!-- Study -->
+      <div class="col-md-6">
+        <div class="activity-item">
+          <img src="img/im/icons8-book-50.png" alt="Study Logo" class="activity-logo">
+          <p>i am an informatics Engineering student an i really enjoy learning to add new skills</p>
+        </div>
+      </div>
+
+      <!-- Gamer -->
+      <div class="col-md-6">
+        <div class="activity-item">
+          <img src="img/im/icons8-game-64.png" alt="Gamer Logo" class="activity-logo">
+          <p>That's me, a very pro gamer, i can also learn through games</p>
+        </div>
+      </div>
+
+      <!-- Sleep -->
+      <div class="col-md-6">
+        <div class="activity-item">
+          <img src="img/im/icons8-bed-50.png" alt="Sleep Logo" class="activity-logo">
+          <p>Sleep is also very important, don't forget to rest</p>
+        </div>
+      </div>
+
+      <!-- Repeat -->
+      <div class="col-md-6">
+        <div class="activity-item">
+          <img src="img/im/icons8-repeat-64.png" alt="Repeat Logo" class="activity-logo">
+          <p>just repeat the activity</p>
+        </div>
+      </div>
+
+      <!-- Additional Info -->
+      <div class="col-md-12 mt-4">
+        
+        <img src="img/yt.jpg" alt="Additional Info Image" class="img-fluid">
+        <p>Saya sedikit menyukai musik akhir akhir ini,mau menikmati musiknya..?</p>
+        <!-- Tautan YouTube -->
+        <p><a href="https://youtu.be/9JiW1UrLiBo?si=d9nIDnKNxZPdDgZX" target="_blank">Lihat video di YouTube</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Lampiran PDF dengan ikon dan tautan -->
+<div class="pdf-link">
+  <a href="kartu/Cetak Kartu Ujian.pdf" target="_blank" download="kartu-ujian">
+    <img src="kartu/icon.jpg" alt="PDF Icon" width="200" height="200">
+    <p>Unduh PDF</p>
+  </a>
+</div>
+
+
+
+
+<!-- Footer Section -->
+<footer class="bg-dark text-light text-center p-3">
+  <div class="container">
+    <!-- Logo Facebook -->
+    <a href="https://www.facebook.com/iqbaal.maulana.3720?mibextid=ZbWKwL" target="_blank" class="text-light me-3">
+      <i class="fab fa-facebook fa-2x"></i>
+    </a>
+
+    <!-- Logo Instagram -->
+    <a href="https://instagram.com/iqbaal.la?igshid=YTQwZjQ0NmI0OA==" target="_blank" class="text-light me-3">
+      <i class="fab fa-instagram fa-2x"></i>
+    </a>
+
+    <!-- Nama Anda -->
+    <p class="m-0">Mindset Progesif</p>
+
+    <!-- Hak Cipta -->
+    <p class="m-0">&copy; 2023 Iqbal Maulana. Hak cipta dilindungi.</p>
+  </div>
+</footer>
+
+<!-- Modals -->
+<!-- Tambahkan modals untuk setiap foto -->
+
+</body>
+</html>
